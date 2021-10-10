@@ -31,7 +31,7 @@
 }
 
 :root {
-  --color-bg-primary: #043035;
+  --color-primary: #043035;
   --color-contrast-primary: #ff8e26;
   --color-neutral-bright: #fafafa;
   --color-neutral-mid: #e5e5e5;
@@ -48,7 +48,7 @@ body {
 }
 
 header {
-  background: var(--color-bg-primary);
+  background: var(--color-primary);
   height: 100vh;
 }
 .intro {
@@ -76,4 +76,33 @@ header {
   font-size: 0.75rem;
   width: 13em;
   margin-top: 3em;
+}
+
+.content {
+  margin: 10rem;
+}
+
+.content__bright-bg {
+  color: var(--color-primary);
+}
+
+.two_columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.preline {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section_headlines {
+  display: block;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.copy {
+  font-size: 1.25rem;
 }
