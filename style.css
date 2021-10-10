@@ -106,3 +106,17 @@ header {
 .copy {
   font-size: 1.25rem;
 }
+
+.blurred {
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  top: 0px;
+  left: 0px;
+  background: var(--color-contrast-primary);
+  border-radius: 200px;
+  filter: blur(40px);
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  animation: random 7s infinite;
+}
