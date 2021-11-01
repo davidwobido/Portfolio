@@ -51,6 +51,23 @@ header {
   background: var(--color-primary);
   height: 100vh;
 }
+
+.intro--background {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  width: 2em;
+  height: 2em;
+  background: var(--color-contrast-primary);
+  border-radius: 200px;
+  filter: blur(40px);
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+  animation: random 10s infinite;
+  animation-name: purple-animation;
+  overflow: hidden;
+}
+
 .intro {
   height: 100vh;
   margin-left: 5rem;
