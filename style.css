@@ -107,16 +107,42 @@ header {
   font-size: 1.25rem;
 }
 
+/*seen her: https://qoals.com/ */
 .blurred {
-  align-items: center;
-  width: 400px;
-  height: 400px;
+  align-self: center;
+  width: 2em;
+  height: 2em;
   top: 0px;
   left: 0px;
   background: var(--color-contrast-primary);
   border-radius: 200px;
   filter: blur(40px);
   mix-blend-mode: multiply;
-  opacity: 0.4;
-  animation: random 7s infinite;
+  opacity: 0.9;
+  animation: random 10s infinite;
+  animation-name: purple-animation;
+}
+
+@keyframes purple-animation {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+    background: var(--color-primary);
+  }
+
+  33% {
+    transform: scale(0.75, 1.5) translate(-30px, -20px);
+    background: var(--color-contrast-primary);
+    /* transform: translate(50% 10%); */
+  }
+
+  66% {
+    transform: scale(1.25, 0.8) translate(-30px, -20px);
+    background: var(--color-neutral-dark);
+    /* transform: translate(50% 10%); */
+  }
+
+  100% {
+    transform: scale(1) translate(0px, 0px);
+    background: var(--color-primary);
+  }
 }
